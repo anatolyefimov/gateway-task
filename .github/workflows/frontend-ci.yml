@@ -1,0 +1,25 @@
+name: Frontend CI
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./src/app/frontend
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Installing dependencies
+        run: npm ci
+
+      - name: Building
+        run: npm run build
+
+      - name: Linting js
+        run: npm run lint -- --max-warnings=0

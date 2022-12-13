@@ -1,0 +1,14 @@
+.main {
+	position: relative;
+	flex-grow: 1;
+}
+
+.main--centered {
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 10px;
+}
+
+.main--centered > * {
+	margin: auto;
+}

@@ -1,0 +1,21 @@
+.status-badge {
+	display: flex;
+	align-items: center;
+	gap:5px;
+	padding: 10px;
+}
+
+.status-badge__circle {
+	width: 7px;
+	height: 8px;
+	border-radius: 50%;
+}
+
+.status-badge__circle--online {
+	background: green;
+}
+
+.status-badge__circle--offline {
+	background: red;
+}
+

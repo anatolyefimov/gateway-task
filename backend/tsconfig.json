@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true,
+    "strict": true,
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "declaration": true,
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "paths": {
+      "@gateway-types": ["../../types"]
+    }
+  },
+  "exclude": [
+    "**/node_modules",
+    "**/dist",
+    "tsconfig-paths-bootstrap.js"
+  ],
+}

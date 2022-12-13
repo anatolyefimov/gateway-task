@@ -1,0 +1,16 @@
+.devices-grid-cell {
+	padding-left: 20px;
+}
+
+.devices-grid-cell__vendor {
+	display: inline-block;
+	white-space: nowrap;
+	max-width: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.devices-grid-cell__link {
+	display: flex;
+	flex-wrap: nowrap;
+}
