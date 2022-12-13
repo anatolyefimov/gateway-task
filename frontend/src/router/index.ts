@@ -1,2 +1,2 @@
 export { useRouteMatch } from './hooks';
-export { newItemId, paths, router } from './router';
+export { newItemId, paths, router, routes } from './router';

@@ -1,14 +1,14 @@
 export type Gateway = {
-	_id: string
-	serialNumber: string
+	_id: string;
+	serialNumber: string;
 	name: string;
 	ipV4: string;
-	devices: Device[]
+	devices: Device[];
 };
 
 export type Device = {
-	_id: string
+	_id: string;
 	vendor: string;
 	createdAt: string;
-	isOnline: boolean
+	isOnline: boolean;
 };

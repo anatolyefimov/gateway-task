@@ -2,15 +2,15 @@ import React, { useCallback, useEffect, useState } from 'react';
 
 import classNames from 'classnames';
 import { StatusCodes } from 'http-status-codes';
-import { Controller, SubmitHandler, useForm } from 'react-hook-form';
+import { Controller, useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router-dom';
 import LoadingButton from '@mui/lab/LoadingButton';
-import { Button, Stack, Switch, TextField, Typography } from '@mui/material';
+import { Stack, Switch, TextField, Typography } from '@mui/material';
 import { DateTimePicker } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 
-import { devicesApi, gatewaysApi } from '@/api';
+import { devicesApi } from '@/api';
 import Form, { FormProps } from '@/components/Form';
 import Loading from '@/components/Loading';
 import { newItemId, paths } from '@/router';

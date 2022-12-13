@@ -1,11 +1,22 @@
 import React from 'react';
 
-import { render, screen } from '@testing-library/react';
+import { createMemoryRouter, RouterProvider } from 'react-router-dom';
+import { render, waitForElementToBeRemoved } from '@testing-library/react';
 
-import App from './App';
+import '@testing-library/jest-dom';
 
-test('renders learn react link', () => {
-	render(<App />);
-	const linkElement = screen.getByText(/learn react/i);
-	expect(linkElement).toBeInTheDocument();
+import { routes } from '@/router';
+
+test('renders app layout', () => {
+	const router = createMemoryRouter(routes);
+
+	const { getByTestId, getByRole } = render(<RouterProvider router={router} />);
+
+	const header = getByTestId('header');
+	const main = getByTestId('gateways-grid');
+
+	waitForElementToBeRemoved(() => getByRole('progressbar'));
+
+	expect(header).toBeInTheDocument();
+	expect(main).toBeInTheDocument();
 });

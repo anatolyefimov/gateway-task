@@ -1,5 +1,5 @@
-export * from './gateways'
-export * from  './devices'
+export * from './devices';
+export * from './gateways';
 
 export type FieldError<T = string> = { field: T; message: string };
 

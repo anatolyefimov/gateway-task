@@ -93,7 +93,7 @@ const GatewaysList: React.FC = () => {
 	);
 
 	return (
-		<main className="main">
+		<main className="main" data-testid="gateways-grid">
 			<DataGrid<Gateway>
 				columns={columns}
 				rows={gateways}

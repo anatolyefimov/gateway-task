@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 		: paths.devices;
 
 	return (
-		<header>
+		<header data-testid="header">
 			<Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
 				<Tabs centered value={currentTab}>
 					<Tab
@@ -25,12 +25,14 @@ const Header: React.FC = () => {
 						value={paths.gateways}
 						to={paths.gateways}
 						component={Link}
+						data-testid="gateways-link"
 					/>
 					<Tab
 						label="Devices"
 						value={paths.devices}
 						to={paths.devices}
 						component={Link}
+						data-testid="devices-link"
 					/>
 				</Tabs>
 			</Box>

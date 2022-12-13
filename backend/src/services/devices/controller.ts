@@ -20,13 +20,6 @@ import type {
 	PatchDeviceResponse,
 } from '@gateway-types';
 
-import {
-	PatchGatewayParams,
-	PatchGatewayRequest,
-	PatchGatewayResponse,
-} from '@gateway-types';
-
-import { GatewayModel } from '../../database';
 import { DeviceModel } from '../../database/models/device';
 import { ResponseOrError } from '../../types';
 import { errorMessages, validateMiddleware } from '../../utils/validation';

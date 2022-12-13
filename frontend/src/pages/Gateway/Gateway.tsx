@@ -2,10 +2,10 @@ import React, { useCallback, useEffect, useState } from 'react';
 
 import classNames from 'classnames';
 import { StatusCodes } from 'http-status-codes';
-import { Controller, SubmitHandler, useForm } from 'react-hook-form';
+import { Controller, useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router-dom';
 import LoadingButton from '@mui/lab/LoadingButton';
-import { Button, TextField } from '@mui/material';
+import { TextField } from '@mui/material';
 
 import { gatewaysApi } from '@/api';
 import DevicesSelect from '@/components/DevicesSelect';
