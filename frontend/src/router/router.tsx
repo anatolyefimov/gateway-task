@@ -18,7 +18,7 @@ export const paths = {
 
 export const newItemId = 'new';
 
-const routes: RouteObject[] = [
+export const routes: RouteObject[] = [
 	{
 		path: paths.index,
 		element: <App />,

@@ -3,8 +3,6 @@ import * as mongoose from 'mongoose';
 
 import config from '../config';
 
-import { deviceSchema } from './models/device';
-
 let mongod: MongoMemoryServer | null = null;
 
 const connect = async () => {
